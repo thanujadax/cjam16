@@ -11,5 +11,4 @@ def factors(n):
 def printDictionary(cars):
     for x in cars:
         print (x)
-    for y in cars[x]:
-        print (y,':',cars[x][y])
+    

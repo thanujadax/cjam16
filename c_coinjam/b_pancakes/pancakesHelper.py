@@ -17,14 +17,14 @@ def removeConsecutiveDuplicates(inputString):
         for i in range(len(inputString)-1):
             j=i+1
             if(j<=len(inputString)):  
-                if( not (inputString[i] is inputString[j]) ):
+                if( not (inputString[i] == inputString[j]) ):
                     newString.append(inputString[j])
     return ''.join(newString)
 
 def getOperations(inputPattern):
     inputPattern = removeConsecutiveDuplicates(inputPattern)
     # remove last element if equal to +
-    if(inputPattern[len(inputPattern)-1] is '+'):
+    if(inputPattern[len(inputPattern)-1] == '+'):
         inputPattern = inputPattern[:-1]
     numOperations = len(inputPattern)
     return numOperations

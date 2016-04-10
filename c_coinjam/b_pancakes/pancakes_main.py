@@ -6,8 +6,8 @@ Created on Apr 9, 2016
 
 import pancakesHelper
 
-inputFileName = '../inputs/b_pancakes/test.in';
-outputFileName = '../outputs/b_pancakes/test.txt'
+inputFileName = '../inputs/b_pancakes/B-large.in';
+outputFileName = '../outputs/b_pancakes/B-large.out'
 
 f = open(inputFileName,'r')
 fout = open(outputFileName,'w')
